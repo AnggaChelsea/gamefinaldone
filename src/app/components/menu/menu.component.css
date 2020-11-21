@@ -1,0 +1,14 @@
+mdb-card{
+	background:black;
+
+}
+nav{
+	color:white;
+}
+mdb-icon{
+	cursor: pointer;
+}
+.choosegame{
+	margin-top:120px;
+	position: relative;
+}
