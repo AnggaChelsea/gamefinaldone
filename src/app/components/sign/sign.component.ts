@@ -29,8 +29,7 @@ export class SignComponent implements OnInit {
       res =>{
       console.log(res)
       localStorage.setItem('token', res.access_token)
-      window.alert('succes login')
-      res => this.router.navigate(['/'])
+      res => this.router.navigate([''])
     },
     )
   }

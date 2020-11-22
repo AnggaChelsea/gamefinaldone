@@ -1,41 +1,13 @@
-<div class="overlay container">
-<form>
-   <div class="con">
-   <header class="head-form">
-      <h2>Log In</h2>
-      <p>login here using your username and password</p>
-   </header>
-   <br>
-   <div class="field-set">
-
-         <span class="input-item">
-           <i class="fa fa-user-circle"></i>
-         </span>
-         <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
-
-      <br>
-
-
-      <span class="input-item">
-        <i class="fa fa-key"></i>
-       </span>
-      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
-
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
-     </span>
-      <br>
-      <button class="log-in"> Log In </button>
-   </div>
-
-   <div class="other">
-      <button class="btn submits frgt-pass">Forgot Password</button>
-      <button class="btn submits sign-up">Sign Up
-      <i class="fa fa-user-plus" aria-hidden="true"></i>
-      </button>
-   </div>
-
-  </div>
-
-</form>
-</div>
+<div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>NNA<span>Arena</span></div>
+		</div>
+		<br>
+    <form>
+		<div class="login">
+				<input [(ngModel)]="loginData.email" type="email" placeholder="email@example.com" name="email"><br>
+				<input [(ngModel)]="loginData.password" type="password" placeholder="password" name="password"><br>
+				<input (click)="signinUser()" type="button" value="Login">
+		</div>
+    </form>

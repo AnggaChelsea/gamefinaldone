@@ -14,8 +14,6 @@ import {MatTabsModule} from '@angular/material/tabs';
 // For MDB Angular Free
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SignComponent } from './components/sign/sign.component';
-import { SignupComponent } from './components/signup/signup.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GamesModule } from './routes/board/games/games.module';
 
@@ -45,8 +43,6 @@ import { ContactComponent } from './components/admin/contact/contact.component';
     FooterComponent,
     HomeComponent,
     BannerComponent,
-    SignComponent,
-    SignupComponent,
     MenuComponent,
     ListplayerComponent,
     AdminComponent,

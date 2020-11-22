@@ -6,8 +6,6 @@ import { Role  } from './models/index';
 
 
 import { HomeComponent } from './components/home/home.component';
-import { SignComponent } from './components/sign/sign.component';
-import { SignupComponent } from './components/signup/signup.component';
 import { TeamallComponent } from './components/board/teamall/teamall.component';
 import { PopulerComponent } from './components/games/populer/populer.component';
 import { AdminComponent } from './components/admin/admin.component';
@@ -15,10 +13,13 @@ import { AdminComponent } from './components/admin/admin.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
-  {path:'sign', component:SignComponent},
-  {path:'signup', component:SignupComponent},
+
   {path:'team', component:TeamallComponent },
   {path:'populer', component:PopulerComponent},
+  {
+    path: 'sign',
+    loadChildren:'./routes/auth/auth.module#AuthModule'
+  },
   {
     path: 'pubg',
     loadChildren: () => import('./routes/board/games/games.module').then(m => m.GamesModule)
