@@ -9,5 +9,9 @@
 				<input [(ngModel)]="loginData.email" type="email" placeholder="email@example.com" name="email"><br>
 				<input [(ngModel)]="loginData.password" type="password" placeholder="password" name="password"><br>
 				<input (click)="signinUser()" type="button" value="Login">
+				<div class="register">
+					<a routerLink="signup">forgot password</a>
+				</div>
+					<a class="btn btn-primary">haven't account</a>
 		</div>
     </form>

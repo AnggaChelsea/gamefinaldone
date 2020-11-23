@@ -21,11 +21,6 @@ export class ProfileComponent implements OnInit {
         private authenticationService: AuthService) { }
 
   ngOnInit(): void {
-  //   this.loading = true;
-  //   this.userService.getById(this.user.id).pipe(first()).subscribe(user => {
-  //   this.loading = false;
-  //   this.userFromApi = user;
-  // });
-  }
 
+}
 }

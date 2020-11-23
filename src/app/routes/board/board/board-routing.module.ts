@@ -6,8 +6,8 @@ import { PlayerComponent } from '../../../components/board/player/player.compone
 
 const routes: Routes = [
   {path:'', component:TeamallComponent,},
-  {path:'', component:BracketComponent,},
-  {path:'', component:PlayerComponent,}
+  {path:'bracket', component:BracketComponent,},
+  {path:'player', component:PlayerComponent,}
 ];
 
 @NgModule({

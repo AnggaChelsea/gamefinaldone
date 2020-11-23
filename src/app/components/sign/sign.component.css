@@ -10,6 +10,9 @@ body{
 	font-family: Arial;
 	font-size: 12px;
 }
+.register{
+	text-align: center;
+}
 
 .body{
 	position: absolute;
@@ -46,7 +49,7 @@ body{
 }
 
 .header div{
-	float: left;
+	text-align: center;
 	color: #fff;
 	font-family: 'Exo', sans-serif;
 	font-size: 35px;

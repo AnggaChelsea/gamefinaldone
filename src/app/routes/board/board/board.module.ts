@@ -8,6 +8,7 @@ import { BoardComponent } from './components/board/board.component';
 import { BoardRoutingModule } from './board-routing.module';
 
 
+
 @NgModule({
   declarations: [
     TeamallComponent,

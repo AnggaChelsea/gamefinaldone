@@ -13,12 +13,10 @@ import { AdminComponent } from './components/admin/admin.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
-
   {path:'team', component:TeamallComponent },
   {path:'populer', component:PopulerComponent},
   {
-    path: 'sign',
-    loadChildren:'./routes/auth/auth.module#AuthModule'
+    path: 'sign', loadChildren: () => import('./routes/auth/auth.module').then(m => m.AuthModule)
   },
   {
     path: 'pubg',
