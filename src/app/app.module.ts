@@ -8,8 +8,6 @@ import { UserService } from './services/user.service';
 import { AuthGuard } from './services/auth/auth.guard';
 import { AuthService } from './services/auth/auth.service';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatTabsModule} from '@angular/material/tabs';
 
 // For MDB Angular Free
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md';
@@ -33,6 +31,9 @@ import { BestplayerComponent } from './components/bestplayer/bestplayer.componen
 import { ContactjoinComponent } from './components/contactjoin/contactjoin.component';
 import { NavbarComponent } from './components/admin/navbar/navbar.component';
 import { ContactComponent } from './components/admin/contact/contact.component';
+import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+
 
 
 
@@ -52,6 +53,8 @@ import { ContactComponent } from './components/admin/contact/contact.component';
     ContactjoinComponent,
     NavbarComponent,
     ContactComponent,
+    ForgotpasswordComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,8 +67,7 @@ import { ContactComponent } from './components/admin/contact/contact.component';
     GamesModule,
     CarouselModule,
     WavesModule,
-    MatTabsModule,
-    MatToolbarModule,
+
     ReactiveFormsModule
 
   ],

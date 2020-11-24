@@ -1,17 +1,27 @@
 <div class="body"></div>
-		<div class="grad"></div>
-		<div class="header">
-			<div>NNA<span>Arena</span></div>
+
+
+		<div class="wrapper fadeInDown">
+		  <div id="formContent">
+		    <!-- Tabs Titles -->
+
+		    <!-- Icon -->
+		    <div class="fadeIn first">
+		      <img src="../../../assets/nnagame.png" id="icon" alt="User Icon" />
+		      <h1>NNA Sport</h1>
+		    </div>
+
+		    <!-- Login Form -->
+		    <form>
+					<input [(ngModel)]="loginData.email" type="email" placeholder="email@example.com" name="email"><br>
+	 				<input [(ngModel)]="loginData.password" type="password" placeholder="password" name="password"><br>
+		      <input (click)="signinUser()" type="submit" class="fadeIn fourth" value="Log In">
+		    </form>
+
+		    <!-- Remind Passowrd -->
+		    <div id="formFooter">
+		      <a class="underlineHover" routerLink="signup">Go to the signup</a>
+		    </div>
+
+		  </div>
 		</div>
-		<br>
-    <form>
-		<div class="login">
-				<input [(ngModel)]="loginData.email" type="email" placeholder="email@example.com" name="email"><br>
-				<input [(ngModel)]="loginData.password" type="password" placeholder="password" name="password"><br>
-				<input (click)="signinUser()" type="button" value="Login">
-				<div class="register">
-					<a routerLink="signup">forgot password</a>
-				</div>
-					<a class="btn btn-primary">haven't account</a>
-		</div>
-    </form>

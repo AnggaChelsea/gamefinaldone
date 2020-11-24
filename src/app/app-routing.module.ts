@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './services/auth/auth.guard';
 import { Role  } from './models/index';
-
-
+import { CommentComponent } from './components/comment/comment.component';
 
 import { HomeComponent } from './components/home/home.component';
 import { TeamallComponent } from './components/board/teamall/teamall.component';
@@ -16,11 +15,22 @@ const routes: Routes = [
   {path:'team', component:TeamallComponent },
   {path:'populer', component:PopulerComponent},
   {
-    path: 'sign', loadChildren: () => import('./routes/auth/auth.module').then(m => m.AuthModule)
+    path:'comment',
+    loadChildren: () =>
+    import('./routes/comment/comment.module')
+    .then(m => m.CommentModule)
+  },
+  {
+    path: 'sign',
+    loadChildren: () =>
+    import('./routes/auth/auth.module')
+    .then(m => m.AuthModule)
   },
   {
     path: 'pubg',
-    loadChildren: () => import('./routes/board/games/games.module').then(m => m.GamesModule)
+    loadChildren: () =>
+    import('./routes/board/games/games.module')
+    .then(m => m.GamesModule)
   },
   {
         path: 'admin',
