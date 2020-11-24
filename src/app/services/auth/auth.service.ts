@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
 import { environment } from '../../../environments/environment';
 import { User } from '../../models/user';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -49,6 +48,13 @@ export class AuthService {
     if(removeToken == null){
       this.router.navigate([''])
     }
+  }
+
+  login(credentials): Observable<any> {
+    return this.http.post(environment.urlAddress + 'signin', {
+      email: credentials.email,
+      password: credentials.password
+    }, httpOptions);
   }
 
   get isLogin(): boolean{
