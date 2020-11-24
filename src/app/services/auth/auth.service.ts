@@ -50,12 +50,12 @@ export class AuthService {
     }
   }
 
-  login(credentials): Observable<any> {
-    return this.http.post(environment.urlAddress + 'signin', {
-      email: credentials.email,
-      password: credentials.password
-    }, httpOptions);
-  }
+  // login(credentials): Observable<any> {
+  //   return this.http.post(environment.urlAddress + 'signin', {
+  //     email: credentials.email,
+  //     password: credentials.password
+  //   });
+  // }
 
   get isLogin(): boolean{
       let token = localStorage.getItem('token');
