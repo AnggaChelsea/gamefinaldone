@@ -11,7 +11,6 @@ import { User } from '../../models/user';
   providedIn: 'root'
 })
 export class AuthService {
-  endpoint = environment.urlAddress;
   headers = new HttpHeaders()
   .set(
     'Content-Types',
@@ -50,12 +49,6 @@ export class AuthService {
     }
   }
 
-  // login(credentials): Observable<any> {
-  //   return this.http.post(environment.urlAddress + 'signin', {
-  //     email: credentials.email,
-  //     password: credentials.password
-  //   });
-  // }
 
   get isLogin(): boolean{
       let token = localStorage.getItem('token');

@@ -5,17 +5,9 @@
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
                         <h3>Welcome</h3>
                         <p>You will play any games here in Arena NNA!</p>
-                        <input type="submit" name="" value="Login"/><br/>
-                    </div>
+                        </div>
                     <div class="col-md-9 register-right">
-                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
-                            </li>
-                        </ul>
+
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">Register as a Gammer</h3>
@@ -43,7 +35,8 @@
 
 
 
-                                        <button (click)="signupUser()" class="btnRegister" >Register</button>
+                                        <button (click)="signupUser()" class="btnRegister bg-dark" >Register</button>
+                                        <a routerLink="/sign" class="btnRegister">Go to Login</a>
                                 </div>
                                 </form>
                             </div>

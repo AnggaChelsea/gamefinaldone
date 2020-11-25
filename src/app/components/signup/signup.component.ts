@@ -30,7 +30,7 @@ export class SignupComponent implements OnInit {
       res =>{
       console.log(res)
       this.regis.push(res),
-      res => this.router.navigate(['/'])
+      res => this.router.navigate(['routes/notifregister/notifregister'])
     },
     )
   }

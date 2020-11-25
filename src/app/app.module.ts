@@ -29,10 +29,9 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { PanitiaComponent } from './components/panitia/panitia.component';
 import { BestplayerComponent } from './components/bestplayer/bestplayer.component';
 import { ContactjoinComponent } from './components/contactjoin/contactjoin.component';
-import { NavbarComponent } from './components/admin/navbar/navbar.component';
-import { ContactComponent } from './components/admin/contact/contact.component';
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { AddgameComponent } from './components/admin/addgame/addgame.component';
 
 
 
@@ -51,10 +50,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     PanitiaComponent,
     BestplayerComponent,
     ContactjoinComponent,
-    NavbarComponent,
-    ContactComponent,
     ForgotpasswordComponent,
     SidebarComponent,
+    AddgameComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,9 +65,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     GamesModule,
     CarouselModule,
     WavesModule,
-
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
   ],
   providers: [ProductService, AuthGuard, AuthService, UserService],
   bootstrap: [AppComponent]

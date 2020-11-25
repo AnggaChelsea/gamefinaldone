@@ -3,9 +3,14 @@ import { Role } from "./role";
 export class User {
     id: number;
     username:string;
+    nama:string;
+    birtdate:Date;
+    phonenumber:number;
     email:string;
     password:string;
-    namadepan:string;
-    namabelakang:string;
-    umur:number
-}
+    picture:string;
+    subdistrict:number;
+    role: Role;
+    token?: string;
+    
+  }
