@@ -1,3 +1,4 @@
+<app-banner></app-banner>
   <h1>BEST GAME POPULER</h1>
   <a routerLink="listgame">view history game</a>
   <!--card semua ini masih hard code jadi numpuk jikalau udah ada backend ini akan simple-->
@@ -76,7 +77,6 @@
         <mdb-card-text> Some quick example text to build on the Game FIFA and make cup you can get the tropy for you
         </mdb-card-text>
 
-
         <p>
           <mdb-icon fas icon="heart" size="1x" aria-hidden="true"></mdb-icon><small class="pr-2">112</small>
           <mdb-icon fas icon="comment-alt" routerLink="comment" size="1x"></mdb-icon><small class="pr-2">2</small>
@@ -103,7 +103,7 @@
       <mdb-card-body>
 
         <mdb-card-title>
-          <h4>MOBILE LEGEND</h4>
+          <h4>FREE FIRE</h4>
         </mdb-card-title>
         <mdb-card-text> Some quick example text to build on the Game FF and make cup you can get the tropy for you
         </mdb-card-text>
@@ -132,7 +132,7 @@
       <mdb-card-body>
 
         <mdb-card-title>
-          <h4>FREE FIRE</h4>
+          <h4>MOBILE LEGEND</h4>
         </mdb-card-title>
         <mdb-card-text> Some quick example text to build on the Game FF and make cup you can get the tropy for you
         </mdb-card-text>
@@ -141,7 +141,6 @@
           <mdb-icon fas icon="comment-alt" routerLink="comment" size="1x"></mdb-icon><small class="pr-2">2</small>
           <mdb-icon fas icon="gamepad" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" size="1">
           </mdb-icon><small class="pr-2">join</small>
-
           <mdb-icon fas icon="trophy" size="1"></mdb-icon><small class="pr-2">12</small>
         </p>
       </mdb-card-body>
@@ -150,8 +149,16 @@
 
 
   </div>
-  <!--  TOKEN_HEADER_KEY
-  <div class="choosegame">
-    <app-bestplayer></app-bestplayer>
-  </div> -->
   <app-contactjoin></app-contactjoin>
+  <!--content-->
+  <div class="container">
+  <div class="row">
+    <div class="col text-game">
+      <app-opengame></app-opengame>
+    </div>
+    <div class="col tengkorak">
+      <img src="../../../assets/img/tengkorak.png" alt="">
+    </div>
+    <app-listplayer></app-listplayer>
+  </div>
+  </div>

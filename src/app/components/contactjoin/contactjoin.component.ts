@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
+declare var $:any
+declare var jQuery: any;
 
 @Component({
   selector: 'app-contactjoin',
@@ -8,31 +10,40 @@ import { FormControl, Validators, FormGroup } from '@angular/forms';
 })
 export class ContactjoinComponent implements OnInit {
 
-  validatingForm: FormGroup;
+  // validatingForm: FormGroup;
   constructor() { }
 
-  ngOnInit(): void {
-    this.validatingForm = new FormGroup({
-      contactFormModalName: new FormControl('', Validators.required),
-      contactFormModalEmail: new FormControl('', Validators.email),
-      contactFormModalSubject: new FormControl('', Validators.required),
-      contactFormModalMessage: new FormControl('', Validators.required)
+  ngOnInit(){
+    $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
     });
-  }
-  get contactFormModalName() {
-    return this.validatingForm.get('contactFormModalName');
+  } );
   }
 
-  get contactFormModalEmail() {
-    return this.validatingForm.get('contactFormModalEmail');
-  }
-
-  get contactFormModalSubject() {
-    return this.validatingForm.get('contactFormModalSubject');
-  }
-
-  get contactFormModalMessage() {
-    return this.validatingForm.get('contactFormModalMessage');
-  }
 
 }

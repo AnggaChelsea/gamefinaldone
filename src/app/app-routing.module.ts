@@ -19,10 +19,8 @@ const routes: Routes = [
   {path:'populer', component:PopulerComponent},
   {path:'comment',loadChildren: () =>import('./routes/comment/comment.module').then(m => m.CommentModule)},
   {path: 'sign',loadChildren: () =>import('./routes/auth/auth.module').then(m => m.AuthModule)},
-  // {path: 'pubg',loadChildren: () =>import('./routes/board/games/games.module').then(m => m.GamesModule)},
-  // {path: 'listgame',loadChildren: () =>import('./routes/board/games/games.module').then(m => m.GamesModule)},
-  // {path: 'admin',component: AdminComponent,canActivate: [AuthGuard],data: { roles: [Role.Admin] }},
-  // // {path:'notifemail', loadChildren: ()=>import('./routes/notifregister/notifregister.module').then(m=>m.NotifregisterModule)},
+  {path: 'pubg',loadChildren: () =>import('./routes/board/games/games.module').then(m => m.GamesModule)},
+  {path: 'listgame',loadChildren: () =>import('./routes/board/games/games.module').then(m => m.GamesModule)},
 
 ];
 

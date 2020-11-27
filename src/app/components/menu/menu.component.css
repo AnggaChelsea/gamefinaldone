@@ -1,14 +1,41 @@
-mdb-card{
-	background:black;
+mdb-card {
+  background: black;
 
 }
-nav{
-	color:white;
+
+nav {
+  color: white;
 }
-mdb-icon{
-	cursor: pointer;
+
+mdb-icon {
+  cursor: pointer;
 }
-.choosegame{
-	margin-top:120px;
-	position: relative;
+app-opengame{
+  position:relative;
+}
+.text-game{
+  margin:30px 40px 10px 20px ;
+}
+.container {
+  margin-top:20px;
+  width: 100%;
+  background: black;
+  position: relative;
+}
+
+
+.content-image {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  float:right;
+}
+
+@media only screen and (max-width: 600px) {
+  app-banner{
+    display:none;
+  }
+  .tengkorak{
+    display:none
+  }
 }

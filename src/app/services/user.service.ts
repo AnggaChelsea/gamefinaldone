@@ -10,19 +10,19 @@ export class UserService {
     constructor(private http: HttpClient) { }
 
     getPublicContent(): Observable<any> {
-        return this.http.get(`${environment.urlAddress}all`, { responseType: 'text' });
+        return this.http.get(`${environment.urlAddress}all`);
       }
-    
+
       getUserBoard(): Observable<any> {
-        return this.http.get(environment.urlAddress + 'user', { responseType: 'text' });
+        return this.http.get(environment.urlAddress + 'user');
       }
-    
+
       getModeratorBoard(): Observable<any> {
-        return this.http.get(environment.urlAddress + 'mod', { responseType: 'text' });
+        return this.http.get(environment.urlAddress + 'mod');
       }
-    
+
       getAdminBoard(): Observable<any> {
-        return this.http.get(environment.urlAddress + 'admin', { responseType: 'text' });
+        return this.http.get(environment.urlAddress + 'admin');
       }
 
     getAll() {

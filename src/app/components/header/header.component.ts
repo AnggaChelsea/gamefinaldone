@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { AuthService } from '../../services/auth/auth.service';
 // declare var $:any;
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, OnInit, Input, ViewChild } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService:AuthService) { }
 
   ngOnInit(){
 

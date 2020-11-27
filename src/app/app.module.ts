@@ -7,8 +7,6 @@ import { ProductService } from './services/product.service';
 import { UserService } from './services/user.service';
 import { AuthGuard } from './services/auth/auth.guard';
 import { AuthService } from './services/auth/auth.service';
-
-
 // For MDB Angular Free
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -32,6 +30,8 @@ import { ContactjoinComponent } from './components/contactjoin/contactjoin.compo
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AddgameComponent } from './components/admin/addgame/addgame.component';
+import { OpengameComponent } from './components/opengame/opengame.component';
+import { TypegamesComponent } from './components/typegames/typegames.component';
 
 
 
@@ -53,6 +53,8 @@ import { AddgameComponent } from './components/admin/addgame/addgame.component';
     ForgotpasswordComponent,
     SidebarComponent,
     AddgameComponent,
+    OpengameComponent,
+    TypegamesComponent,
   ],
   imports: [
     BrowserModule,
