@@ -14,15 +14,31 @@ import { GamesService } from '../../services/games.service';
 })
 export class MenuComponent implements OnInit {
 
-
-  constructor(private gamesService:GamesService, private http:HttpClient) { }
-  product$:Observable<any[]>;
+  jokes:Object = [];
+  constructor(private gamesService:GamesService, private http:HttpClient) { 
+    this.jokes = [
+      {
+        setup: "What did the cheese say when it looked in the mirror?",
+        punchline: "Hello-Me (Halloumi)"
+      },
+      {
+        setup: "What kind of cheese do you use to disguise a small horse?",
+        punchline: "Mask-a-pony (Mascarpone)"
+      },
+      {
+        setup: "A kid threw a lump of cheddar at me",
+        punchline: "I thought ‘That’s not very mature’"
+      },
+    ];
+  }
+  
+  // product$:Observable<any[]>;
   // li:any;
   // lis=[];
   ngOnInit(){
 
-    this.product$ = this.gamesService.getGame();
-    console.log(this.product$)
+    // this.product$ = this.gamesService.getGame();
+    // console.log(this.product$)
     // this.http.get('https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=5').subscribe(
     //   response => {
     //     console.log(response)

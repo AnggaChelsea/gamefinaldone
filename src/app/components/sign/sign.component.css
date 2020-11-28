@@ -24,6 +24,12 @@ body{
 	-webkit-filter: blur(5px);
 	z-index: 0;
 }
+.fab{
+	font-size:30px;
+}
+button{
+	background:transparant;
+}
 
 a {
   color: #92badd;

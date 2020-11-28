@@ -32,6 +32,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AddgameComponent } from './components/admin/addgame/addgame.component';
 import { OpengameComponent } from './components/opengame/opengame.component';
 import { TypegamesComponent } from './components/typegames/typegames.component';
+import { DetailgameComponent } from './components/detailgame/detailgame.component';
+import { LurahComponent } from './components/admin/lurah/lurah.component';
+import { PagelurahComponent } from './components/pagelurah/pagelurah.component';
 
 
 
@@ -55,6 +58,9 @@ import { TypegamesComponent } from './components/typegames/typegames.component';
     AddgameComponent,
     OpengameComponent,
     TypegamesComponent,
+    DetailgameComponent,
+    LurahComponent,
+    PagelurahComponent,
   ],
   imports: [
     BrowserModule,

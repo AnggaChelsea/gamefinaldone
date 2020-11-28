@@ -15,12 +15,16 @@
 		    <form>
 					<input [(ngModel)]="loginData.email" type="email" placeholder="email@example.com" name="email"><br>
 	 				<input [(ngModel)]="loginData.password" type="password" placeholder="password" name="password"><br>
-		      <input (click)="signinUser()" type="submit" class="fadeIn fourth" value="Log In">
+		      <input (click)="signinUser()" type="submit" class="fadeIn fourth" value="Log In"><br>
+					<div routerLink="forgot" class="underlineHover text-danger"><small>Forgot Password</small></div> <br>
+					<a class="underlineHover text-dark" routerLink="signup">Go to the signup</a>
 		    </form>
+
 
 		    <!-- Remind Passowrd -->
 		    <div id="formFooter">
-		      <a class="underlineHover" routerLink="signup">Go to the signup</a>
+				<a href="#" class="fab fa-facebook"></a> &nbsp;&nbsp;&nbsp;
+				<a href="#" class="fab fa-google"></a>
 		    </div>
 
 		  </div>
