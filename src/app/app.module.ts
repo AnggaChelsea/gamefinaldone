@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+// import { AngularFireModule } from '@angular/fire';
 import { ProductService } from './services/product.service';
 import { UserService } from './services/user.service';
 import { AuthGuard } from './services/auth/auth.guard';
@@ -35,6 +37,10 @@ import { TypegamesComponent } from './components/typegames/typegames.component';
 import { DetailgameComponent } from './components/detailgame/detailgame.component';
 import { LurahComponent } from './components/admin/lurah/lurah.component';
 import { PagelurahComponent } from './components/pagelurah/pagelurah.component';
+import { GetdataComponent } from './components/admin/getdata/getdata.component';
+import { SidbarComponent } from './components/admin/sidbar/sidbar.component';
+import { MainComponent } from './components/admin/main/main.component';
+import { IfRolesDirective } from './if-roles.directive';
 
 
 
@@ -61,6 +67,10 @@ import { PagelurahComponent } from './components/pagelurah/pagelurah.component';
     DetailgameComponent,
     LurahComponent,
     PagelurahComponent,
+    GetdataComponent,
+    SidbarComponent,
+    MainComponent,
+    IfRolesDirective,
   ],
   imports: [
     BrowserModule,
@@ -74,6 +84,7 @@ import { PagelurahComponent } from './components/pagelurah/pagelurah.component';
     CarouselModule,
     WavesModule,
     ReactiveFormsModule,
+    // AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [ProductService, AuthGuard, AuthService, UserService],
   bootstrap: [AppComponent]

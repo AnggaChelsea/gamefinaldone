@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { environment } from '../../../environments/environment';
 import { User } from '../../models/user';
+import { Role } from '../../models/role';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,43 @@ export class AuthService {
   private getUserdata(response){
     return response.data
   }
+
+  public getSession(): Promise<boolean> {
+  const session = localStorage.getItem('token');
+  return new Promise((resolve, reject) => {
+    if (session) {
+      return resolve(true);
+    } else {
+      return reject(false);
+    }
+  });
+}
+
+
+public getUserRoles(): Promise<string[]> {
+ return new Promise((resolve, reject) => {
+   this.http.get(`${environment.urlAddress}getUserRoles`)
+   .pipe(catchError((error: any, caught: any) => {
+       reject(error);
+       return caught;
+     }),
+     map((res: any) => res.data))
+   .subscribe((role: string[]) => {
+     resolve(role);
+   });
+ });
+}
+
+public areUserRolesAllowed(userRoles: string[], allowedUserRoles: Role[]): boolean {
+  for (const role of userRoles) {
+    for (const allowedRole of allowedUserRoles) {
+      if (role.toLowerCase() === allowedRole.toLowerCase()) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
 
 
   signupUser(user){

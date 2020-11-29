@@ -17,6 +17,8 @@ const routes: Routes = [
   {path:'team', component:TeamallComponent },
   {path:'populer', component:PopulerComponent},
   {path:'detailgame', component:DetailgameComponent,},
+  // {path: 'admin', loadChildren: () => import('./routes/admin/admin.module').then(m => m.AdminModule),
+  //  canActivate: [AuthGuard],data: {userRoles: [Roles.ADMIN,]} },
   {path:'comment',loadChildren: () =>import('./routes/comment/comment.module').then(m => m.CommentModule)},
   {path: 'sign',loadChildren: () =>import('./routes/auth/auth.module').then(m => m.AuthModule)},
   {path: 'boardgame',loadChildren: () =>import('./routes/board/board/board.module').then(m => m.BoardModule)},
