@@ -36,11 +36,16 @@ import { OpengameComponent } from './components/opengame/opengame.component';
 import { TypegamesComponent } from './components/typegames/typegames.component';
 import { DetailgameComponent } from './components/detailgame/detailgame.component';
 import { LurahComponent } from './components/admin/lurah/lurah.component';
-import { PagelurahComponent } from './components/pagelurah/pagelurah.component';
 import { GetdataComponent } from './components/admin/getdata/getdata.component';
 import { SidbarComponent } from './components/admin/sidbar/sidbar.component';
 import { MainComponent } from './components/admin/main/main.component';
 import { IfRolesDirective } from './if-roles.directive';
+import { FreeforallComponent } from './components/typegames/freeforall/freeforall.component';
+import { IndividualsComponent } from './components/typegames/individuals/individuals.component';
+import { TournamentMatchComponent } from './components/board/tournament-match/tournament-match.component';
+import { SoccerComponent } from './components/games/soccer/soccer.component';
+import { ThreeimagebannerComponent } from './components/threeimagebanner/threeimagebanner.component';
+
 
 
 
@@ -66,11 +71,16 @@ import { IfRolesDirective } from './if-roles.directive';
     TypegamesComponent,
     DetailgameComponent,
     LurahComponent,
-    PagelurahComponent,
+
     GetdataComponent,
     SidbarComponent,
     MainComponent,
     IfRolesDirective,
+    FreeforallComponent,
+    IndividualsComponent,
+    TournamentMatchComponent,
+    SoccerComponent,
+    ThreeimagebannerComponent,
   ],
   imports: [
     BrowserModule,

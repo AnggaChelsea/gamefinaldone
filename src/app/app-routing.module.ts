@@ -24,6 +24,7 @@ const routes: Routes = [
   {path: 'boardgame',loadChildren: () =>import('./routes/board/board/board.module').then(m => m.BoardModule)},
   {path: 'pubg',loadChildren: () =>import('./routes/board/games/games.module').then(m => m.GamesModule)},
   {path: 'listgame',loadChildren: () =>import('./routes/board/games/games.module').then(m => m.GamesModule)},
+  {path: 'pagelurah',loadChildren: () =>import('./routes/pagelurah/pagelurah.module').then(m => m.PagelurahModule)},
 
 ];
 
