@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any
 
 @Component({
   selector: 'app-panitia',
@@ -9,7 +10,8 @@ export class PanitiaComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
   }
 
 }

@@ -4,7 +4,6 @@ import { AuthGuard } from './services/auth/auth.guard';
 import { Role  } from './models/index';
 import { CommentComponent } from './components/comment/comment.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 import { HomeComponent } from './components/home/home.component';
 import { TeamallComponent } from './components/board/teamall/teamall.component';
@@ -13,12 +12,13 @@ import { DetailgameComponent } from './components/detailgame/detailgame.componen
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
-  {path:'sidebar', component:SidebarComponent},
   {path:'team', component:TeamallComponent },
   {path:'populer', component:PopulerComponent},
   {path:'detailgame', component:DetailgameComponent,},
+  {path:'profile', component:ProfileComponent},
   // {path: 'admin', loadChildren: () => import('./routes/admin/admin.module').then(m => m.AdminModule),
   //  canActivate: [AuthGuard],data: {userRoles: [Roles.ADMIN,]} },
+  {path:'admin', loadChildren: () => import('./routes/admin/admin.module') .then(m => m.AdminModule)},
   {path:'comment',loadChildren: () =>import('./routes/comment/comment.module').then(m => m.CommentModule)},
   {path: 'sign',loadChildren: () =>import('./routes/auth/auth.module').then(m => m.AuthModule)},
   {path: 'boardgame',loadChildren: () =>import('./routes/board/board/board.module').then(m => m.BoardModule)},

@@ -15,7 +15,7 @@ import { GamesService } from '../../services/games.service';
 export class MenuComponent implements OnInit {
 
   jokes:Object = [];
-  constructor(private gamesService:GamesService, private http:HttpClient) { 
+  constructor(private gamesService:GamesService, private http:HttpClient) {
     this.jokes = [
       {
         setup: "What did the cheese say when it looked in the mirror?",
@@ -29,9 +29,25 @@ export class MenuComponent implements OnInit {
         setup: "A kid threw a lump of cheddar at me",
         punchline: "I thought ‘That’s not very mature’"
       },
+      {
+        setup: "A kid threw a lump of cheddar at me",
+        punchline: "I thought ‘That’s not very mature’"
+      },
+      {
+        setup: "A kid threw a lump of cheddar at me",
+        punchline: "I thought ‘That’s not very mature’"
+      },
+      {
+        setup: "A kid threw a lump of cheddar at me",
+        punchline: "I thought ‘That’s not very mature’"
+      },
+      {
+        setup: "A kid threw a lump of cheddar at me",
+        punchline: "I thought ‘That’s not very mature’"
+      },
     ];
   }
-  
+
   // product$:Observable<any[]>;
   // li:any;
   // lis=[];

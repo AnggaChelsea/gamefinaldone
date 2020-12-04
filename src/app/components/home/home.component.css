@@ -1,5 +1,5 @@
 .jumbotron{
-  margin-top:40px;
+  margin-top:10px;
   -webkit-filter:contrast(-10%);
   position: relative;
   background-size: cover;
@@ -13,7 +13,7 @@
   margin-top:100px;
 }
 .container{
-  height: 350px;
+  height: 380px;
   position: relative;
 }
 input[type=text]{

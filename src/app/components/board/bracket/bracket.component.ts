@@ -17,6 +17,7 @@ declare global {
 
 export class BracketComponent implements OnInit {
 
+
     minimalData = {
       teams: [
         ["Team 1", "Team 2"], /* first matchup */

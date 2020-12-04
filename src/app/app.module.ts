@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TypegamesComponent } from './components/typegames/typegames.component';
+import { DataTablesModule } from 'angular-datatables';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -13,8 +15,6 @@ import { AuthService } from './services/auth/auth.service';
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { GamesModule } from './routes/board/games/games.module';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,31 +22,21 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { MenuComponent } from './components/menu/menu.component';
-
 import { ListplayerComponent } from './components/listplayer/listplayer.component';
-import { AdminComponent } from './components/admin/admin.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { PanitiaComponent } from './components/panitia/panitia.component';
 import { BestplayerComponent } from './components/bestplayer/bestplayer.component';
 import { ContactjoinComponent } from './components/contactjoin/contactjoin.component';
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { AddgameComponent } from './components/admin/addgame/addgame.component';
 import { OpengameComponent } from './components/opengame/opengame.component';
-import { TypegamesComponent } from './components/typegames/typegames.component';
 import { DetailgameComponent } from './components/detailgame/detailgame.component';
-import { LurahComponent } from './components/admin/lurah/lurah.component';
-import { GetdataComponent } from './components/admin/getdata/getdata.component';
-import { SidbarComponent } from './components/admin/sidbar/sidbar.component';
-import { MainComponent } from './components/admin/main/main.component';
 import { IfRolesDirective } from './if-roles.directive';
-import { FreeforallComponent } from './components/typegames/freeforall/freeforall.component';
-import { IndividualsComponent } from './components/typegames/individuals/individuals.component';
-import { TournamentMatchComponent } from './components/board/tournament-match/tournament-match.component';
 import { SoccerComponent } from './components/games/soccer/soccer.component';
 import { ThreeimagebannerComponent } from './components/threeimagebanner/threeimagebanner.component';
-
-
+import { CardGameComponent } from './components/card-game/card-game.component';
+import { ChatmeComponent } from './components/chatme/chatme.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { PagesearchComponent } from './components/pagesearch/pagesearch.component';
 
 
 
@@ -59,28 +49,22 @@ import { ThreeimagebannerComponent } from './components/threeimagebanner/threeim
     BannerComponent,
     MenuComponent,
     ListplayerComponent,
-    AdminComponent,
     ProfileComponent,
     PanitiaComponent,
     BestplayerComponent,
     ContactjoinComponent,
     ForgotpasswordComponent,
-    SidebarComponent,
-    AddgameComponent,
     OpengameComponent,
-    TypegamesComponent,
     DetailgameComponent,
-    LurahComponent,
-
-    GetdataComponent,
-    SidbarComponent,
-    MainComponent,
     IfRolesDirective,
-    FreeforallComponent,
-    IndividualsComponent,
-    TournamentMatchComponent,
+    TypegamesComponent,
     SoccerComponent,
     ThreeimagebannerComponent,
+    CardGameComponent,
+    ChatmeComponent,
+    ChatComponent,
+    PagesearchComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -90,10 +74,10 @@ import { ThreeimagebannerComponent } from './components/threeimagebanner/threeim
     CommonModule,
     FormsModule,
     MDBBootstrapModule,
-    GamesModule,
     CarouselModule,
     WavesModule,
     ReactiveFormsModule,
+    DataTablesModule,
     // AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [ProductService, AuthGuard, AuthService, UserService],

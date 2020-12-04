@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="px-lg-5">
+
+    <!-- For demo purpose -->
+
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-4 col-md-6 mb-4" *ngFor="let game of jokes">
+        <div class="bg-dark rounded shadow-sm"><img src="{{game.image}}" alt="" class="img-fluid card-img-top">
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">{{game.namagame}}</a></h5>
+            <p class="small text-muted mb-0">{{game.deskription}}</p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-dark px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span
+                  class="font-weight-bold">{{game.type}}</span></p>
+              <a routerLink="{{game.join}}"
+                class="badge badge-danger px-3 rounded-pill font-weight-normal">view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Next</a></div>
+  </div>
+</div>
