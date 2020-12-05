@@ -19,13 +19,24 @@ export class CardGameComponent implements OnInit {
         namagame:'Fifa',
         deskription: "What did the cheese say when it looked in the mirror?",
         type: "Hello-Me (Halloumi)",
-        join:'sign'
+        join:'boardgame'
       },
       {
         image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
         namagame:'Fifa',
         deskription: "What did the cheese say when it looked in the mirror?",
-        type: "Hello-Me (Halloumi)",
+        participant:"20",
+        matchday:"20-20-2021",
+        type: "free for all",
+        join:'join'
+      },
+      {
+        image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+        namagame:'Fifa',
+        deskription: "What did the cheese say when it looked in the mirror?",
+        participant:"20",
+        matchday:"20-20-2021",
+        type: "free for all",
         join:'join'
       },
       {
@@ -39,35 +50,36 @@ export class CardGameComponent implements OnInit {
         image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
         namagame:'Fifa',
         deskription: "What did the cheese say when it looked in the mirror?",
-        type: "Hello-Me (Halloumi)",
+        participant:"20",
+        matchday:"20-20-2021",
+        type: "free for all",
         join:'join'
       },
       {
         image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
         namagame:'Fifa',
         deskription: "What did the cheese say when it looked in the mirror?",
-        type: "Hello-Me (Halloumi)",
+        participant:"20",
+        matchday:"20-20-2021",
+        type: "free for all",
         join:'join'
       },
       {
         image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
         namagame:'Fifa',
         deskription: "What did the cheese say when it looked in the mirror?",
-        type: "Hello-Me (Halloumi)",
+        participant:"20",
+        matchday:"20-20-2021",
+        type: "free for all",
         join:'join'
       },
       {
         image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
         namagame:'Fifa',
         deskription: "What did the cheese say when it looked in the mirror?",
-        type: "Hello-Me (Halloumi)",
-        join:'join'
-      },
-      {
-        image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
-        namagame:'Fifa',
-        deskription: "What did the cheese say when it looked in the mirror?",
-        type: "Hello-Me (Halloumi)",
+        participant:"20",
+        matchday:"20-20-2021",
+        type: "free for all",
         join:'join'
       },
 

@@ -5,6 +5,7 @@ import { TeamallComponent } from '../../../components/board/teamall/teamall.comp
 import { PlayerComponent } from '../../../components/board/player/player.component';
 import { BoardComponent } from '../../../components/board/board.component';
 import { BigmatchComponent } from '../../../components/board/bigmatch/bigmatch.component';
+import { MatchdayComponent } from '../../../components/board/matchday/matchday.component';
 
 
 import { BoardRoutingModule } from './board-routing.module';
@@ -18,6 +19,7 @@ import { BoardRoutingModule } from './board-routing.module';
     PlayerComponent,
     BoardComponent,
     BigmatchComponent,
+    MatchdayComponent
     ],
   imports: [
     CommonModule,
