@@ -64,7 +64,6 @@ import { PagesearchComponent } from './components/pagesearch/pagesearch.componen
     ChatmeComponent,
     ChatComponent,
     PagesearchComponent,
-
   ],
   imports: [
     BrowserModule,

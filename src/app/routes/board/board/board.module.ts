@@ -4,6 +4,7 @@ import { BracketComponent } from '../../../components/board/bracket/bracket.comp
 import { TeamallComponent } from '../../../components/board/teamall/teamall.component';
 import { PlayerComponent } from '../../../components/board/player/player.component';
 import { BoardComponent } from '../../../components/board/board.component';
+import { BigmatchComponent } from '../../../components/board/bigmatch/bigmatch.component';
 
 
 import { BoardRoutingModule } from './board-routing.module';
@@ -15,7 +16,8 @@ import { BoardRoutingModule } from './board-routing.module';
     TeamallComponent,
     BracketComponent,
     PlayerComponent,
-    BoardComponent
+    BoardComponent,
+    BigmatchComponent,
     ],
   imports: [
     CommonModule,

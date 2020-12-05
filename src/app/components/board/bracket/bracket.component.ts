@@ -16,25 +16,23 @@ declare global {
 })
 
 export class BracketComponent implements OnInit {
+  minimalData = {
+     teams: [
+       ["Team 1", "Team 2"], /* first matchup */
+       ["Team 3", "Team 4"]  /* second matchup */
+     ],
+   results: [
+     [[1, 2], [3, 4]],       /* first round */
+     [[4, 6], [2, 1]]        /* second round */
+     ]
+   };
 
+ constructor() { }
 
-    minimalData = {
-      teams: [
-        ["Team 1", "Team 2"], /* first matchup */
-        ["Team 3", "Team 4"]  /* second matchup */
-      ],
-    results: [
-      [[1, 2], [3, 4]],       /* first round */
-      [[4, 6], [2, 1]]        /* second round */
-      ]
-    };
-
-  constructor() { }
-
-  ngOnInit(){
-    $('#minimal').bracket({
-     init: this.minimalData /* data to initialize the bracket with */
-   })
-  }
+ ngOnInit(){
+   $('#minimal').bracket({
+    init: this.minimalData /* data to initialize the bracket with */
+  })
+ }
 
 }
