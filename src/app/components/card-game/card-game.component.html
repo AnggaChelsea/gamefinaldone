@@ -3,7 +3,7 @@
 
     <!-- For demo purpose -->
 
-    <form class="form-inline ml-3">
+    <form class="form-inline">
       <div class="input-group input-group-sm">
         <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
         <div class="input-group-append">
@@ -11,6 +11,10 @@
             <i class="fas fa-search"></i>
           </button>
         </div>
+      </div>
+      <div class="typebutton">
+      <button type="button" class="btn btn-success" name="button">Single</button>
+      <button type="button" class="btn btn-success" name="button">FFA</button>
       </div>
     </form>
 
@@ -21,13 +25,14 @@
           <div class="p-4">
             <h5> <a href="#" class="text-dark">{{game.namagame}}</a></h5>
             <p class="small text-muted mb-0">{{game.deskription}}</p>
+            <br>
             <ul>
-              <li><i class="fas fa-user-check"></i>{{game.participant}}</li>
-              <li></li>
+              <li><i class="fas fa-user-check"></i><small>{{game.participant}} &nbsp; participant</small></li>
+              <li><i class="far fa-clock"></i>&nbsp;<small>{{game.matchday}}</small></li>
             </ul>
             <div class="d-flex align-items-center justify-content-between rounded-pill bg-dark px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span
-                  class="font-weight-bold">{{game.type}}</span></p>
+              <p class="small mb-0"><i class="fas fa-gamepad"></i>&nbsp;<small
+                  class="font-weight-bold">{{game.type | uppercase}}</small></p>
               <a routerLink="{{game.join}}"
                 class="badge badge-danger px-3 rounded-pill font-weight-normal">view</a>
             </div>

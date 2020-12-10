@@ -19,8 +19,9 @@ export class AdminComponent implements OnInit {
 
     constructor(private userService: UserService) { }
 
+    jokes$:Object = [];
+
     ngOnInit(){
-  
       $(document).ready(function() {
         $('#example').DataTable( {
       columnDefs: [ {
@@ -36,4 +37,5 @@ export class AdminComponent implements OnInit {
   } );
 } );
     }
+
 }

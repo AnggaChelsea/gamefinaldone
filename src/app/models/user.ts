@@ -4,7 +4,8 @@ export class User {
     id: number;
     username:string;
     nama:string;
-    birtdate:Date;
+    kelurahan:string;
+    birthdate:Date;
     phonenumber:number;
     email:string;
     password:string;

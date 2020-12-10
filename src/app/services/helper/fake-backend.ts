@@ -3,12 +3,96 @@ import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTT
 import { Observable, of, throwError } from 'rxjs';
 import { delay, materialize, dematerialize } from 'rxjs/operators';
 
-import { Role } from '../_models';
+// import { Role } from '../_models';
 
-const users = [
-    { id: 1, username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'User', role: Role.Admin },
-    { id: 2, username: 'user', password: 'user', firstName: 'Normal', lastName: 'User', role: Role.User }
-];
+// const users = [
+//     { id: 1, username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'User', role: Role.Admin },
+//     { id: 2, username: 'user', password: 'user', firstName: 'Normal', lastName: 'User', role: Role.User }
+// ];
+
+// const jokes = [
+//   {
+//     image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+//     namagame:'COC',
+//     deskription: "What did the cheese say when it looked in the mirror?",
+//     participant:"20",
+//     matchday:"20-20-2021",
+//     type: "free for all",
+//     id:"1",
+//     join:'boardgame:'
+//   },
+//   {
+//     image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+//     namagame:'Winning',
+//     deskription: "What did the cheese say when it looked in the mirror?",
+//     participant:"20",
+//     matchday:"20-20-2021",
+//     type: "free for all",
+//       id:"2",
+//     join:'boardgame'
+//   },
+//   {
+//     image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+//     namagame:'Medal',
+//     deskription: "What did the cheese say when it looked in the mirror?",
+//     participant:"20",
+//     matchday:"20-20-2021",
+//     type: "free for all",
+//       id:"3",
+//     join:'boardgame'
+//   },
+//   {
+//     image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+//     namagame:'Dota',
+//     deskription: "What did the cheese say when it looked in the mirror?",
+//     participant:"20",
+//     matchday:"20-20-2021",
+//     type: "free for all",
+//     id:"4",
+//     join:'boardgame'
+//   },
+//   {
+//     image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+//     namagame:'FF',
+//     deskription: "What did the cheese say when it looked in the mirror?",
+//     participant:"20",
+//     matchday:"20-20-2021",
+//     type: "free for all",
+//     id:"5",
+//     join:'boardgame'
+//   },
+//   {
+//     image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+//     namagame:'Fifa',
+//     deskription: "What did the cheese say when it looked in the mirror?",
+//     participant:"20",
+//     matchday:"20-20-2021",
+//     type: "free for all",
+//     id:"6",
+//     join:'boardgame'
+//   },
+//   {
+//     image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+//     namagame:'PUBG',
+//     deskription: "What did the cheese say when it looked in the mirror?",
+//     participant:"20",
+//     matchday:"20-20-2021",
+//     type: "free for all",
+//     id:"8",
+//     join:'boardgame'
+//   },
+//   {
+//     image:'https://media.hitekno.com/thumbs/2019/08/03/24548-fifa-20/730x480-img-24548-fifa-20.jpg',
+//     namagame:'PPes',
+//     deskription: "What did the cheese say when it looked in the mirror?",
+//     participant:"20",
+//     matchday:"20-20-2021",
+//     type: "free for all",
+//     id:"7",
+//     join:'boardgame'
+//   },
+//
+// ];
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {

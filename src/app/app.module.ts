@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TypegamesComponent } from './components/typegames/typegames.component';
 import { DataTablesModule } from 'angular-datatables';
+import { NotifregisterComponent } from './components/notifregister/notifregister.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -24,11 +25,9 @@ import { BannerComponent } from './components/banner/banner.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ListplayerComponent } from './components/listplayer/listplayer.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { PanitiaComponent } from './components/panitia/panitia.component';
 import { BestplayerComponent } from './components/bestplayer/bestplayer.component';
 import { ContactjoinComponent } from './components/contactjoin/contactjoin.component';
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
-import { OpengameComponent } from './components/opengame/opengame.component';
 import { DetailgameComponent } from './components/detailgame/detailgame.component';
 import { IfRolesDirective } from './if-roles.directive';
 import { SoccerComponent } from './components/games/soccer/soccer.component';
@@ -37,6 +36,9 @@ import { CardGameComponent } from './components/card-game/card-game.component';
 import { ChatmeComponent } from './components/chatme/chatme.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { PagesearchComponent } from './components/pagesearch/pagesearch.component';
+import { FormffaComponent } from './components/board/formffa/formffa.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { ClubfootbalComponent } from './components/board/clubfootbal/clubfootbal.component';
 
 
 
@@ -50,11 +52,9 @@ import { PagesearchComponent } from './components/pagesearch/pagesearch.componen
     MenuComponent,
     ListplayerComponent,
     ProfileComponent,
-    PanitiaComponent,
     BestplayerComponent,
     ContactjoinComponent,
     ForgotpasswordComponent,
-    OpengameComponent,
     DetailgameComponent,
     IfRolesDirective,
     TypegamesComponent,
@@ -64,6 +64,10 @@ import { PagesearchComponent } from './components/pagesearch/pagesearch.componen
     ChatmeComponent,
     ChatComponent,
     PagesearchComponent,
+    FormffaComponent,
+    SpinnerComponent,
+    NotifregisterComponent,
+    ClubfootbalComponent
   ],
   imports: [
     BrowserModule,

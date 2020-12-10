@@ -15,14 +15,21 @@ declare global {
   styleUrls: ['./bracket.component.css']
 })
 
+
 export class BracketComponent implements OnInit {
   minimalData = {
      teams: [
-       ["Team 1", "Team 2"], /* first matchup */
-       ["Team 3", "Team 4"]  /* second matchup */
+       ["Angga", "Badru"],/* first matchup */
+       ["Angga1", "Badru1"],
+       ["Angga2", "Badru2"],
+       ["Angga3", "Badru3"],
+       ["Angga4", "Badru4"],
+       ["Angga5", "Badru5"],
+       ["Angga6", "Badru6"],
+       ["Irfan", "Anju"]  /* second matchup */
      ],
    results: [
-     [[1, 2], [3, 4]],       /* first round */
+     [[4, 2], [3, 4],[3, 4]], /* first round */
      [[4, 6], [2, 1]]        /* second round */
      ]
    };
@@ -33,6 +40,6 @@ export class BracketComponent implements OnInit {
    $('#minimal').bracket({
     init: this.minimalData /* data to initialize the bracket with */
   })
- }
 
+ }
 }

@@ -34,15 +34,22 @@
               "./node_modules/animate.css/animate.css",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "./node_modules/ng-tournament-tree/styles/ngtt-styles.scss",
+              "./node_modules/ng-tournament-tree/styles/ngtt-single-elimination-styles.scss",
+              "./node_modules/ng-tournament-tree/styles/ngtt-double-elimination-styles.scss",
+              "./node_modules/ng-tournament-tree/styles/ngtt-variables.scss",
               "src/styles.css"
             ],
             "scripts": [
+              "./node_modules/popper.js/dist/umd/popper.min.js",
               "./node_modules/chart.js/dist/Chart.js",
               "./node_modules/hammerjs/hammer.min.js",
               "./node_modules/jquery/dist/jquery.min.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/jquery-bracket/dist/jquery.bracket.min.js",
+              "node_modules/jquery-bracket/dist/jquery.gracket.min.js",
               "node_modules/datatables.net/js/jquery.dataTables.js"
+
             ]
           },
           "configurations": {

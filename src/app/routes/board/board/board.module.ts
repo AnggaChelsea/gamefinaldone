@@ -6,6 +6,8 @@ import { PlayerComponent } from '../../../components/board/player/player.compone
 import { BoardComponent } from '../../../components/board/board.component';
 import { BigmatchComponent } from '../../../components/board/bigmatch/bigmatch.component';
 import { MatchdayComponent } from '../../../components/board/matchday/matchday.component';
+import { OpengameComponent } from '../../../components/opengame/opengame.component';
+import { TournamentMatchComponent } from '../../../components/board/tournament-match/tournament-match.component';
 
 
 import { BoardRoutingModule } from './board-routing.module';
@@ -19,6 +21,8 @@ import { BoardRoutingModule } from './board-routing.module';
     PlayerComponent,
     BoardComponent,
     BigmatchComponent,
+    OpengameComponent,
+    TournamentMatchComponent,
     MatchdayComponent
     ],
   imports: [
